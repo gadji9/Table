@@ -1,0 +1,19 @@
+.PageLoader {
+    min-height: calc(90vh - var(--navbar-height));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    position: absolute;
+    left: 50%;
+    top: 50;
+    transform: translate(-50%);
+
+}
+
+.PageLoader::after {
+    content: '';
+    position: absolute;
+    z-index: 100;
+    box-shadow: 0 0 0 120vmax rgb(0 0 0 / 50%);
+}

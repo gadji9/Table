@@ -1,0 +1,33 @@
+.inputWrapper {
+    display: flex;
+    background-color:  #5a5c66;
+    align-items: center;
+    padding-block: 12px;
+    padding-inline: 18px;
+    gap: 10px;
+    width: 100%;
+}
+
+
+.Input {
+    width: 100%;
+    outline: none;
+    color: white;
+    background-color:#5a5c66;
+    border: none;
+
+    &::placeholder {
+        color: #b9b9b9;
+    }
+}
+
+
+.magnifyingGlass {
+    display: flex;
+    border: none;
+    cursor: pointer;
+}
+
+.search {
+    width: 100%;
+}
