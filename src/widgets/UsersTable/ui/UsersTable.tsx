@@ -33,7 +33,9 @@ const UsersTable: FunctionComponent<IUsersTableProps> = () => {
   const dispatch = useAppDispatch();
   const posts = useAppSelector((state) => state.posts.posts);
 
-  const [page, setPage] = useState<number>(Number(searchParams.get('page')));
+  const [page, setPage] = useState<number>(
+    Number(searchParams.get('page')) || 1,
+  );
   const [tableData, setTabledata] = useState<IPost[]>([]);
 
   const { data, isLoading } = useQuery(['posts', page], () =>
